@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Template with Context</title>
+</head>
+<body>
+    <h1>Welcome to Django - class 18</h1>
+    <p>Today is {{ current_date_time }}</p>
+    <p>Hi, my name is {{ first_name }} {{ last_name }} and I'm {{ age }} years old</p>
+    {% if age < 25 %}
+        <p>I'm still young</p>
+    {% else %}
+        <p>I'm not that young anymore...</p>
+    {% endif %}
+    <p>My favourite programming languages are: </p>
+    <ul>
+        {% for programming_language in favourite_programming_languages %}
+            <li>{{ programming_language }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
