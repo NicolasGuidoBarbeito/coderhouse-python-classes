@@ -5,7 +5,7 @@ This demo application will allow you start managing your family members and quer
 Once you cloned this repo, you can start this app by executing the following commands:
 
 ```shell
-python manage-py runserver 
+python manage.py runserver 
 ```
 
 ## Query family members
@@ -28,7 +28,7 @@ python manage-py runserver
 
 - **URL**
 
-  family-member/registration/:first_name/:last_name/:age/:birthdate
+  family-member/registration/first_name/last_name/age/birthdate
 
 
 - **Method**
